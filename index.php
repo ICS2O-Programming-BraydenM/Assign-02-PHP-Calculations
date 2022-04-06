@@ -28,12 +28,12 @@
 <!-- php echo to print the html to the page -->
 
     <div class="container">
-    <img src="./images/oceans.jpg" alt="Ocean" style="width:100%;">
-    <h2 style="color:white"><font face="Times New Roman"><div class="centered">◉ Diameter and Circumference of a Circle ◉</div></h2>
+    <img src="./images/panorama.jpg" alt="Ocean" style="width:100%;">"
+    <h2 style="color:white"><font face="Times New Roman"><div class="centered">◉ Diameter and Circumference of a Circle in PHP ◉</div></h2>
     </div>
-
+    
 <!-- Slider with Starting Value -->
-			<? php echo "<h4 style="color:purple">How much do you know about circles and their formulas?</h4>" ?>
+			<h4 style="color:purple">How much do you know about circles and their formulas?</h4>
 			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0"> 
 
 <!-- Glowing text -->
@@ -43,6 +43,7 @@
     <img src="./images/formulas.jpg" width="800" length="900">
 
 <!-- Adding a JavaScript button --> 
+        <form action="./results.php" method="post" target="results">
     <script src="./js/script.js"></script>
     <h1 style="background-color:palevioletred"><font face="Garamond">Circle Program, with a JS file</font></h1>
     <p>
@@ -75,7 +76,7 @@
 		<br></br>
 
 <!-- A table -->
-    <h2 style="background-color:lightgreen"><font face="Garamond">Here is a table</font></h2>
+    <h2 style="background-color:turquoise"><font face="Garamond">Here is a table</font></h2>
       <h6>This table is showcasing different types of shapes with their formula for area, perimeter and how hard the calculation is to do on a scale of 10 (10 being the hardest and 1 being the easiest)</h6>
  <table border="1">
           <tr>
@@ -105,7 +106,7 @@
          </table>
 
 <!-- An ordered list -->
-  <h2 style="background-color:lightyellow"><font face="Garamond">~ A list of prisms ~</font></h2>
+  <h2 style="background-color:violet"><font face="Garamond">~ A list of prisms ~</font></h2>
   <ol>
     <li>Triangular prism</li>
     <li>Square prism</li>
