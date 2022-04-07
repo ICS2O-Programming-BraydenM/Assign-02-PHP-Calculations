@@ -43,7 +43,7 @@
 
 body {
   background-color: chartreuse;
-  font-family: times new roman;
+  font-family: "Garamond";
 }
 
 .glow {
@@ -71,3 +71,10 @@ body {
   margin-left:10%;
   width: 80%;
 }
+
+h1 {
+  background-color: palevioletred;
+  padding: 20px;
+  font-family: "Garamond", Arial, sans-serif;
+}
+

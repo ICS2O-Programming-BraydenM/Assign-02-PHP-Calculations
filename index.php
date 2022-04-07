@@ -3,7 +3,7 @@
   <head>
 <!-- metadata -->
     <meta charset="utf-8">
-    <meta name="description" content="My first Assignment">
+    <meta name="description" content="My second Assignment">
     <meta name="keywords" content="immaculata, ics2o">
     <meta name="author" content="Brayden MacMillan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 <!-- To use Google's MDL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />
-    <title>Assignment 2</title>
+    <title>Assignment 2 with PHP</title>
     
 <!-- Link to CSS sheet -->
     <link rel="stylesheet" href="./css/style.css">
@@ -33,7 +33,9 @@
     </div>
     
 <!-- Slider with Starting Value -->
-			<h4 style="color:purple">How much do you know about circles and their formulas?</h4>
+			<?php
+      echo "<h4>How much do you know about circles and their formulas?</h4>";
+      ?>
 			<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0"> 
 
 <!-- Glowing text -->
@@ -44,22 +46,24 @@
 
 <!-- Adding a JavaScript button --> 
         <form action="./results.php" method="post" target="results">
-    <script src="./js/script.js"></script>
-    <h1 style="background-color:palevioletred"><font face="Garamond">Circle Program, with a JS file</font></h1>
+    <?php
+      echo "<h1>Circle Program, with PHP</h1>";
+      ?>
     <p>
-      <h3 style="background-color:moccasin"><font face="Garamond">Please enter your information:</font></h3>
-      <form action="javascript:payClicked()">
+      <?php
+      echo "<h3>Please enter your information:</h3>";
+      ?>
+      <form action="./results.php" method="post" target="results">
         <label for="length">The length of the radius in cm</label>
-        <input type="number" step="any" id="length" placeholder="Length"><br><br>
+        <input type="number" step="any" name="length" placeholder="Length"><br><br>
         <input type="submit" value="Calculate">
       </form>
     </p>
-
-<!-- Create a space where the user information will be displayed -->
-      <div id="display-the-results"></div>
-    	<div id="diameter"></div>
-      <div id="circumference"></div>
-		
+              
+<!-- Adding an iframe -->
+          <iframe id="results" name="results">		
+		</iframe>
+        	
 
 <!-- Adding a MDL button -->
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -76,8 +80,10 @@
 		<br></br>
 
 <!-- A table -->
-    <h2 style="background-color:turquoise"><font face="Garamond">Here is a table</font></h2>
-      <h6>This table is showcasing different types of shapes with their formula for area, perimeter and how hard the calculation is to do on a scale of 10 (10 being the hardest and 1 being the easiest)</h6>
+      <?php
+       echo "<h2>Here is a table</h2>";
+       echo "<h6>This table is showcasing different types of shapes with their formula for area, perimeter and how hard the calculation is to do on a scale of 10 (10 being the hardest and 1 being the easiest)</h6>"
+         ?>
  <table border="1">
           <tr>
             <th>Shape name</th>
@@ -106,7 +112,9 @@
          </table>
 
 <!-- An ordered list -->
-  <h2 style="background-color:violet"><font face="Garamond">~ A list of prisms ~</font></h2>
+  <?php
+   echo "<h2>~ A list of prisms ~</h2>";
+   ?>
   <ol>
     <li>Triangular prism</li>
     <li>Square prism</li>

@@ -1,29 +1,18 @@
-// Copyright (c) 2022 Brayden MacMillan All rights reserved
-//
-// Created by: Brayden MacMillan
-// Created on: April 4 2022
-// This file contains the JS functions for index.html
-
-"use strict"
-
+<?php
 // declare constants
-define (Pi, "Math.PI")
+define (Pi, pi());
 
 // This function calculates diameter and circumference of a circle
  
-function payClicked () {
-  // get user input
-  $radius = document.getElementById('length').value
+  // get user input;
+  $radius = $_POST['length'];
 
-  // calculate the diameter and circumference
-  $diameter = $radius * 2
-  $circumference = $radius * 2 * Math.Pi
-
-  // display the results
-  document.getElementById('diameter').innerHTML = "The diameter of the circle would be " + diameter.toFixed(2) + " cm"
-
-  // display the results
-
-  document.getElementById('circumference').innerHTML = "The circumference of the circle would be " + circumference.toFixed(2) + " cm"
-}
-
+  // calculate the diameter and circumference;
+  $diameter = $radius * 2;
+  $circumference = $radius * 2 * Pi;
+  $diameter_rounded = number_format($diameter, 2);
+  $circumference_rounded = number_format($circumference, 2);
+?>
+<center>
+ The diameter would be <?php echo "$diameter_rounded"; ?> cm and the circumference would be <?php echo "$circumference_rounded"; ?> cm.
+</center>
